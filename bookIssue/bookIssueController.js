@@ -84,7 +84,7 @@ const getAllIssuedBooks = async (req, res) => {
 
 const adminBooks = async (req, res) => {
     try {
-        let books = await bookIssueModel.find().populate('book','user')
+        let books = await bookIssueModel.find().populate('book').populate('user')
         return res
         .status(200)
         .send({ message: 'success', books});
