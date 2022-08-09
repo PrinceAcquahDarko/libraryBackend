@@ -7,8 +7,6 @@ import {
 } from '../utility/utility.js'
 
 const registerUser = async(req, res) => {
-    console.log(data)
-
     let validData = validateInputs(data);
     if (validData.error) return res.status(300).send({ message:validData.error?.details[0].message})
 
