@@ -2,8 +2,8 @@ import bookIssueModel from './bookIssueModel.js'
 
 const issueAbook = async (req, res) => {
     try {
-        // await bookIssueModel.collection.drop()
-        const filter = {book: req.query.bookId, user:req.query.id};
+        
+        const filter = {book: req.query.bookId, user:req.query.id, returned: false};
         const bk = await bookIssueModel.findOne(filter)
         if(bk){
             
