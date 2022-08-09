@@ -8,7 +8,7 @@ import {
 
 const registerUser = async(req, res) => {
     let data = {...req.body}
-    
+
     let validData = validateInputs(data);
     if (validData.error) return res.status(300).send({ message:validData.error?.details[0].message})
 
@@ -71,7 +71,7 @@ const getUser = async (req, res) => {
         });
         return res
         .status(200)
-        .send({ message: 'user found '});
+        .send({ message: 'user found ', loginUser});
 
     } catch (error) {
          return res
