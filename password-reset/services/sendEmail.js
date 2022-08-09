@@ -49,7 +49,7 @@ const get_html_message = (name, token) => {
         <p>There was recently a request to change the password for your azLibrary account </p>
 
         <p> if you requested this password change, please complete the process by using the code 
-            below to reset your password </p>
+            below to reset your password: </p>
 
         <h3>  ${token}</h3>
 
@@ -63,8 +63,8 @@ const get_html_message = (name, token) => {
             </li>
        </ul>
 
-        <span>Best Regards</span>
-        <span><strong>The azLibrary Team </span></div>
+        <span>Best Regards</span><br>
+        <span><strong>The azLibrary Team </strong></span>
     `
 }
 

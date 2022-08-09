@@ -18,7 +18,7 @@ function Router(){
     
     BookRouter.route('/id')
         .get(getBookById)
-        .put(updateBook)
+        .put(upload.single('Image'),updateBook)
         .delete(deleteBook)
     
 

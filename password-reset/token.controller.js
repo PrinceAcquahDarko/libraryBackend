@@ -58,7 +58,7 @@ const validate_token = async (req, res) => {
             userId: user.id,
             token: req.body.token
         })
-        if(!token) return res.status(400).send("invalid link or expired");
+        if(!token) return res.status(500).send("invalid link or expired");
 
         await token.delete()
         return res
