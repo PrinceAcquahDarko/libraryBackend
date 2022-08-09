@@ -28,8 +28,8 @@ const updateBook = async (req, res) => {
     const filter = {_id: req.query.bookId};
     if(req.file){
         let cloudi = v2()
-        res = await cloudi.uploader.upload(req.file.path, {resource_type:"auto"})
-        req.body.link = res.secure_url
+        let response = await cloudi.uploader.upload(req.file.path, {resource_type:"auto"})
+        req.body.link = response.secure_url
     }
     const update = req.body
 
