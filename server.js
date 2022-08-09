@@ -11,10 +11,10 @@ app.use(express.json())
 app.use(cors())
 
 
-app.use('/user', UserRouter)
-app.use('/book', BookRouter)
-app.use('/issue', issueRouter)
-app.use('/token', tokenRouter)
+app.use('/api/v1/user', UserRouter)
+app.use('/api/v1/book', BookRouter)
+app.use('/api/v1/issue', issueRouter)
+app.use('/api/v1/token', tokenRouter)
 
 
 export {app}
