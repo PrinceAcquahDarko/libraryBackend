@@ -53,8 +53,18 @@ const get_html_message = (name, token) => {
 
         <h3>  ${token}</h3>
 
-        <p>Best Regards</p>
-        <div><strong>The azLibrary Team </strong></div>
+        <h3>PLEASE NOTE</h3>
+
+        <ul>
+            <li>This password reset code is only valid for the next 10 minutes</li>
+            <li>If you did not make this request, you can 
+                ignore this message and your 
+                password will remain the same 
+            </li>
+       </ul>
+
+        <span>Best Regards</span>
+        <span><strong>The azLibrary Team </span></div>
     `
 }
 

@@ -47,7 +47,7 @@ const updateUser = async (req, res) => {
     const update = req.body
 
     if(update.password){
-        update.password = hashpassword(update.password);
+        update.password = hashPassword(update.password);
     }
 
     try {
@@ -128,3 +128,19 @@ export {
     loginUser,
     getUser 
 }
+
+
+//update user should inform me at the top if sucess or error
+
+//updated users new firstname should be taken and issuedn into db
+
+//hashpassword is solved
+
+//change picture on bookpage
+
+//update button on details page should blue
+
+//work on email template chage regards to span and </br>
+
+// and add expires at
+
